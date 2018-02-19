@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/photo_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg" />
+
+    <ImageView
+        android:id="@+id/logo_image_view"
+        android:layout_width="@dimen/logo_layout_size_225dp"
+        android:layout_height="@dimen/logo_layout_size_225dp"
+        android:layout_margin="@dimen/layout_margin_10dp"
+        android:src="@drawable/logo" />
+
+    <LinearLayout
+
+        android:id="@+id/LinearLayout_A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/logo_image_view"
+        android:layout_marginBottom="@dimen/layout_margin_20dp"
+        android:layout_marginTop="@dimen/layout_margin_20dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/address_line"
+            android:text="@string/street" />
+
+        <TextView
+            style="@style/city_line"
+            android:text="@string/address" />
+
+        <TextView
+            style="@style/phone_line"
+            android:text="@string/phone" />
+
+    </LinearLayout>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/LinearLayout_A"
+        android:layout_margin="@dimen/layout_margin_35dp"
+        android:autoSizeMaxTextSize="@dimen/textSize_20sp"
+        android:autoSizeTextType="uniform"
+        android:background="@color/in_demand_color"
+        android:fontFamily="@font/open_sans"
+        android:gravity="fill_vertical"
+        android:padding="@dimen/padding_15dp"
+        android:text="@string/be_in_demand"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>
